@@ -49,7 +49,7 @@ rsync: recv_generator: mkdir "172.16.1.213" (in backup) failed: Permission denie
 
 ```shell
 [root@backup ~]# ls -ld /backup/
-drwxr-xr-x 2 root root 6 Apr  9 20:29 /backup/
+drwxr-xr-x 2 root root 6 Apr  8 20:29 /backup/
 ```
 
 将所有权更改为用户 `rsync` 和组 `rsync`
@@ -58,7 +58,7 @@ drwxr-xr-x 2 root root 6 Apr  9 20:29 /backup/
 [root@backup ~]# chown -R rsync.rsync /backup/
 # 运行上面的命令之后，再次查看权限
 [root@backup ~]# ls -ld /backup/
-drwxr-xr-x 2 rsync rsync 6 Apr  9 20:29 /backup/
+drwxr-xr-x 2 rsync rsync 6 Apr  8 20:29 /backup/
 ```
 
 用户需要与rsyncd的配置文件保持一致，并且用户需要存在
@@ -66,9 +66,7 @@ drwxr-xr-x 2 rsync rsync 6 Apr  9 20:29 /backup/
 ```shell
 uid = rsync
 gid = rsync
-```
 
-```shell
 [root@backup ~]# id rsync
 uid=1001(rsync) gid=1001(rsync) groups=1001(rsync)
 ```

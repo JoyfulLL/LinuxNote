@@ -13,8 +13,6 @@
 | --list         | 列出归档文件的内容      |
 | --help         | 显示帮助信息         |
 
-
-
 ##### 创建压缩包⭐⭐⭐⭐⭐
 
 ```shell
@@ -38,7 +36,4 @@ tar xf /tmp/etc.tar.gz
 -C解压到指定目录
 tar xf 压缩包路径 -C 解压后的存放目录
 tar xf /tmp/etc.tar.gz -C /mnt/
-
 ```
-
-
