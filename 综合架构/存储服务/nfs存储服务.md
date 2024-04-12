@@ -62,7 +62,7 @@
    /data/    172.16.1.0/24(rw)
    需要共享的位置   允许读写/data/的IP网段
    ```
-
+   
    重启nfs
    [root@storage ~]# systemctl reload nfs
 
@@ -87,7 +87,7 @@ drwxr-xr-x 2 nfsnobody nfsnobody 6 Apr 10 19:10 /data/
 
 6. 服务端本地测试
 
-1.    客户端永久挂载
+7.    客户端永久挂载
    
    方式1.  挂载命令写到 /etc/rc.local
    
@@ -100,15 +100,7 @@ drwxr-xr-x 2 nfsnobody nfsnobody 6 Apr 10 19:10 /data/
         设备                 挂载点    文件系统类型   挂载参数   是否检查  是否备份
      172.16.1.214:/data/   /upload/     nfs       defaults    0       0
 
-
-
-
-
 >  配置了客户端永久挂载，必须检查nfs服务端是否已经启动；必须先启动服务端再启动客户端，否则会出现异常！！！
-
-
-
-
 
 NFS配置文件选项
 
@@ -119,8 +111,8 @@ NFS配置文件选项
 | sync  | 同步，只要用户上传，就把数据写到磁盘上.                           |
 | async | 异步,用户上传的数据,nfs先临时存放到内存中,过一段时间写入到磁盘。 并发高,数据可能丢失 |
 
-
-
-
+```shell
+/nfsdata/ 172.16.1.0/24(rw,all_squash,anonuid=9999,anongid=9999)
+```
 
 
