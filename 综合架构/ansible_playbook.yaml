@@ -1,0 +1,49 @@
+---
+- hosts: storager
+  tasks:
+    - name: 01 install nfs-utils,rpcbind
+      yum:
+        name: nfs-utils,rpcbind
+        state: present
+
+    - name: 02 modify the config
+      lineinfile:
+        path: /etc/exports
+        line: "/backup-nfs/ 172.16.1.0/24(rw,all_squash)"
+        create: true
+
+    - name: 03 create share directory and modify the owner
+      file:
+        path: /backup-nfs
+        owner: nfsnobody
+        group: nfsnobody
+        state: directory
+
+    - name: 04-1 start service rpcbind and nfs
+      systemd:
+        name: rpcbind
+        enabled: yes
+        state: started
+
+    - name: 04-2 start service rpcbind and nfs
+      systemd:
+        name: nfs
+        enabled: yes
+        state: started
+      
+...
+
+---
+- hosts: web
+  tasks:
+    - name: 01 install nfs-utils
+      yum:
+        name: nfs-utils
+        state: present
+
+    - name: 02 mount nfs
+      mount:
+        src: 192.168.50.245:/backup-nfs
+        path: /ans-upload
+        state: mounted
+...

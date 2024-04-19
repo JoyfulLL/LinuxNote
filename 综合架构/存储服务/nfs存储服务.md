@@ -114,5 +114,3 @@ NFS配置文件选项
 ```shell
 /nfsdata/ 172.16.1.0/24(rw,all_squash,anonuid=9999,anongid=9999)
 ```
-
-
