@@ -2,18 +2,74 @@
 
 ### rsyncd服务与客户使用流程
 
-| **部署流程** |                       |
-| -------- | --------------------- |
-| 服务端      | ①配置文件                 |
-|          | ②添加虚拟用户               |
-|          | ③secret文件，密码文件，修改文件权限 |
-|          | ④创建共享目录并修改其权限所有者为虚拟用户 |
-|          | ⑤启动或重启，开机自启动。         |
-|          | ⑥测试                   |
-| 客户端      | ①密码文件以及文件的权限          |
-|          | ②客户端命令测试              |
+| **部署流程** |                                           |
+| ------------ | ----------------------------------------- |
+| 服务端       | ①配置文件                                 |
+|              | ②添加虚拟用户                             |
+|              | ③secret文件，密码文件，修改文件权限       |
+|              | ④创建共享目录并修改其权限所有者为虚拟用户 |
+|              | ⑤启动或重启，开机自启动。                 |
+|              | ⑥测试                                     |
+| 客户端       | ①密码文件以及文件的权限                   |
+|              | ②客户端命令测试                           |
 
-### 
+
+
+使用Ansible对服务端[storage]以及客户端[web]进行配置
+
+```shell
+[root@m1 /server/scripts/playbook]# ansible -i hosts web,storage -m ping
+[root@m1 /server/scripts/playbook]# ansible -i hosts web,storage -m yum -a 'name=rsync state=present'
+[root@m1 /server/scripts/playbook]# ansible -i hosts web,storage -m systemd -a 'name=rsyncd state=started'
+[root@m1 /server/scripts/playbook]# cat hosts 
+[web]
+192.168.50.203
+
+[storage]
+192.168.50.245
+
+[UbuntuServer]
+192.168.50.97
+
+编写服务端的配置文件：
+[root@m1 /server/scripts/playbook]# vim rsyncd.conf
+[root@m1 /server/scripts/playbook]# cat rsyncd.conf 
+fake super = yes
+uid = rsync
+gid = rsync
+use chroot = no
+max connections = 2000
+timeout = 600
+pid file = /var/run/rsyncd.pid
+lock file = /var/run/rsyncd.lock
+log file = /var/log/rsyncd.log
+ignore errors
+read only = false
+list = false
+auth users = rsync_backup
+secrets file = /etc/rsync.password
+
+#########################
+[backup]
+comment = Gather backups
+path = /backup/
+
+使用ansible发送编写好的配置文件给服务端
+[root@m1 /server/scripts/playbook]# ansible -i hosts storage -m copy -a 'src="/server/scripts/playbook/rsyncd.conf" dest="/etc/rsyncd.conf" backup=yes'
+
+检查是否配置文件是否发送到位
+[root@m1 /server/scripts/playbook]# ansible -i hosts storage -a 'cat /etc/rsyncd.conf'
+```
+
+
+
+
+
+
+
+
+
+
 
 ### Rsync 守护进程（服务端配置文件）
 
@@ -69,4 +125,5 @@ secrets file = /etc/rsync.password #指定用户名和密码文件 格式： 用
 path = /backup #模块在服务端的绝对路径
 ```
 
-### 
+
+
