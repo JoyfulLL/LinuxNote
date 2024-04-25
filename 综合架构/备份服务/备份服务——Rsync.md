@@ -2,16 +2,16 @@
 
 ### rsyncd服务与客户使用流程
 
-| **部署流程** |                                           |
-| ------------ | ----------------------------------------- |
-| 服务端       | ①配置文件                                 |
-|              | ②添加虚拟用户                             |
-|              | ③secret文件，密码文件，修改文件权限       |
-|              | ④创建共享目录并修改其权限所有者为虚拟用户 |
-|              | ⑤启动或重启，开机自启动。                 |
-|              | ⑥测试                                     |
-| 客户端       | ①密码文件以及文件的权限                   |
-|              | ②客户端命令测试                           |
+| **部署流程** |                                                    |
+| ------------ | -------------------------------------------------- |
+| 服务端       | ①配置文件                                          |
+|              | ②添加**虚拟用户rsync**                             |
+|              | ③secret文件，**密码文件，修改文件权限为600**       |
+|              | ④创建共享目录并修改其权限所有者为**虚拟用户rsync** |
+|              | ⑤启动或重启，开机自启动。                          |
+|              | ⑥测试                                              |
+| 客户端       | ①密码文件以及文件的权限600                         |
+|              | ②客户端命令测试                                    |
 
 
 
@@ -50,9 +50,9 @@ auth users = rsync_backup
 secrets file = /etc/rsync.password
 
 #########################
-[backup]
+[backupWeb]
 comment = Gather backups
-path = /backup/
+path = /backup/www/
 
 使用ansible发送编写好的配置文件给服务端
 [root@m1 /server/scripts/playbook]# ansible -i hosts storage -m copy -a 'src="/server/scripts/playbook/rsyncd.conf" dest="/etc/rsyncd.conf" backup=yes'
@@ -63,9 +63,20 @@ path = /backup/
 
 
 
+#### 服务端添加虚拟用户
 
+```shell
+[root@storage ~]# useradd -r -s /sbin/nologin rsync
+[root@storage ~]# id rsync
+uid=1001(rsync) gid=1001(rsync) groups=1001(rsync)
+```
 
+### 服务端创建备份文件夹 /backup/www/ 修改权限
 
+```shell
+[root@storage ~]# mkdir -p /backup/www/
+[root@storage ~]# chown -R rsync:rsync /backup/www/
+```
 
 
 
