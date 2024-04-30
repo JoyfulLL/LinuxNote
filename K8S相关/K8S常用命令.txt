@@ -1,0 +1,7 @@
+安装PING工具
+echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
+apt-get update -y
+apt-get install -y iputils-ping
+
+强制删除POD：
+kubectl delete pods <pod> --grace-period=0 --forc
