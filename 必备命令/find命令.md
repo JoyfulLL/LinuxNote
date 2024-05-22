@@ -108,7 +108,7 @@ Hello01.txt  Hello03.txt  Hello05.txt  Hello07.txt  Hello09.txt
 Hello02.txt  Hello04.txt  Hello06.txt  Hello08.txt  Hello10.txt
 ```
 
-### 案例一：核心操作
+### 案例一：核心操作⭐⭐⭐⭐⭐
 
 > find+ls
 >
@@ -161,7 +161,7 @@ hello 09
 Hello 10
 ```
 
-### 案例二：打包与压缩
+### 案例二：打包与压缩⭐⭐⭐
 
 ```shell
 [abig@manager ~]$ tar zcf /tmp/find.tar.gz `find /tmp/test/find/ -type f -name '*.txt'`
@@ -263,10 +263,10 @@ total 8
 
 
 
-## find小结
+# find小结
 
-- find根据类型，名字，大小，修改时间进行查找:star2::star2::star2::star2::star2:
-- find与常用命令搭配，如：ls，rm，sed:star2::star2::star2::star2::star2:
+- find根据类型，名字，大小，修改时间进行查找⭐⭐⭐⭐⭐
+- find与常用命令搭配，如：ls，rm，sed⭐⭐⭐⭐⭐
 - find与打包压缩
 - find与复制或移动
 
