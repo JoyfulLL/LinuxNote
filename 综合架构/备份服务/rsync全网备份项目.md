@@ -1,5 +1,5 @@
 # 客户端备份脚本
-
+[[正则表达式]]
 ```shell
 [root@web01 /script]# cat backupWeb.sh
 #!/bin/bash

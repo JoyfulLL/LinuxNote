@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "796bbf488ca764d7",
+        "id": "21482d69de1092a3",
         "type": "tabs",
         "children": [
           {
-            "id": "917e9a37eeb3e622",
+            "id": "d8962df96d9b27fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -133,7 +133,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -150,31 +151,35 @@
       "random-note:Open random note": false
     }
   },
-  "active": "917e9a37eeb3e622",
+  "active": "d8962df96d9b27fd",
   "lastOpenFiles": [
-    "综合架构/Ansible/剧本调试.md",
-    "必备命令/磁盘管理.md",
-    "必备命令/用户管理.md",
+    "综合架构/备份服务/rsync全网备份项目.md",
+    "必备命令/正则表达式.md",
+    "必备命令/三剑客之sed.md",
     "必备命令/磁盘故障.md",
-    "必备命令/day014    day000-day013-知识点复盘.png",
+    "必备命令/三剑客之awk.md",
+    "综合架构/Nginx/NginxProxy.md",
+    "综合架构/Ansible/Ansible流程控制.md",
+    "综合架构/Ansible/Ansible优化.md",
+    "综合架构/Ansible/剧本调试.md",
+    "综合架构/Ansible/Jinja2模板.md",
+    "综合架构/Ansible/Vault与Galaxy.md",
+    "综合架构/Ansible/必备模块.md",
     "必备命令/find命令.md",
+    "必备命令/用户管理.md",
+    "必备命令/tar-打包及解压.md",
+    "综合架构/备份服务/备份服务——Rsync.md",
+    "必备命令/磁盘管理.md",
+    "必备命令/day014    day000-day013-知识点复盘.png",
     "必备命令/系统别名.md",
     "().md",
-    "综合架构/备份服务/rsync全网备份项目.md",
     "在这个分区中，找出目录本身大于1M的。.md",
     "必备命令/系统高负载排查.md",
     "2024-05-23.md",
     "Untitled.canvas",
-    "必备命令/tar-打包及解压.md",
     "综合架构/存储服务/nfs存储服务.md",
-    "综合架构/Ansible/Jinja2模板.md",
-    "综合架构/Nginx/NginxProxy.md",
     "综合架构/存储服务/用户压缩.md",
-    "综合架构/Ansible/Ansible优化.md",
     "K8S相关/使用kubeadm快速部署一个K8s集群.md",
-    "K8S相关/使用kubeadm搭建高可用的K8s集群.md",
-    "综合架构/Ansible/必备模块.md",
-    "综合架构/Ansible/Ansible流程控制.md",
-    "综合架构/Ansible/Vault与Galaxy.md"
+    "K8S相关/使用kubeadm搭建高可用的K8s集群.md"
   ]
 }
