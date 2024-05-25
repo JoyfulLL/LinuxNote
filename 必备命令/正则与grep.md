@@ -326,7 +326,7 @@ Line 1: Hello, world
 
 ![](attachments/Pasted%20image%2020240525152014.png)
 
-### 3. `()`表示一个整体，用于后向引用（反向引用sed）
+### 3. ()表示一个整体，用于后向引用（sed反向引用）
 
 查看是否安装了vim或者tree或者iotop
 
