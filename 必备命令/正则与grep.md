@@ -328,6 +328,8 @@ Line 1: Hello, world
 
 ### 3. ()表示一个整体，用于后向引用（sed反向引用）
 
+^7fa4b4
+
 查看是否安装了vim或者tree或者iotop
 
 ![](attachments/Pasted%20image%2020240525153049.png)

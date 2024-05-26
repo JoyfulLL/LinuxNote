@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "41953fc8c791bb75",
+        "id": "962d7ec3b9d49f60",
         "type": "tabs",
         "children": [
           {
-            "id": "4a013d065f1fd497",
+            "id": "b3cd6d3a52a040c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "a82fbc3b5a31c354",
+            "id": "d6c1639d3ec9cfd2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 275.5,
+    "collapsed": true
   },
   "right": {
     "id": "3f7e0ccd0dab278f",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "必备命令/正则与grep.md",
+                "file": "必备命令/三剑客之sed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "必备命令/正则与grep.md",
+                "file": "必备命令/三剑客之sed.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "必备命令/正则与grep.md"
+                "file": "必备命令/三剑客之sed.md"
               }
             }
           },
@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 396.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,11 +171,12 @@
       "random-note:Open random note": false
     }
   },
-  "active": "a82fbc3b5a31c354",
+  "active": "b3cd6d3a52a040c9",
   "lastOpenFiles": [
-    "必备命令/三剑客之sed.md",
-    "().md",
     "必备命令/正则与grep.md",
+    "必备命令/三剑客之sed.md",
+    "必备命令/attachments/Pasted image 20240526111649.png",
+    "().md",
     "必备命令/三剑客之awk.md",
     "必备命令/attachments/Pasted image 20240525203926.png",
     "Untitled.canvas",
@@ -193,7 +194,6 @@
     "必备命令/正则表达式.md",
     "必备命令/attachments/Pasted image 20240525143256.png",
     "必备命令/attachments/Pasted image 20240525142313.png",
-    "必备命令/attachments/Pasted image 20240525142110.png",
     "必备命令/attachments",
     "必备命令/磁盘管理.md",
     "必备命令/磁盘故障.md",
