@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "必备命令/sed与grep练习题.md",
+                "file": "必备命令/三剑客之awk.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
+    "width": 367.5,
     "collapsed": true
   },
   "right": {
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "必备命令/sed与grep练习题.md",
+                "file": "必备命令/三剑客之awk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "必备命令/sed与grep练习题.md",
+                "file": "必备命令/三剑客之awk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "必备命令/sed与grep练习题.md"
+                "file": "必备命令/三剑客之awk.md"
               }
             }
           },
@@ -147,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 264.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,6 +161,11 @@
   },
   "active": "b3cd6d3a52a040c9",
   "lastOpenFiles": [
+    "必备命令/三剑客之awk.md",
+    "必备命令/attachments/Pasted image 20240527172631.png",
+    "必备命令/attachments/Pasted image 20240527171211.png",
+    "必备命令/attachments/Pasted image 20240527170657.png",
+    "必备命令/attachments/Pasted image 20240527170643.png",
     "必备命令/sed与grep练习题.md",
     "必备命令/find命令.md",
     "必备命令/attachments/Pasted image 20240526162333.png",
@@ -168,7 +173,6 @@
     "必备命令/正则与grep.md",
     "必备命令/attachments/Pasted image 20240526111649.png",
     "().md",
-    "必备命令/三剑客之awk.md",
     "必备命令/attachments/Pasted image 20240525203926.png",
     "Untitled.canvas",
     "必备命令/tar-打包及解压.md",
@@ -178,11 +182,7 @@
     "必备命令/attachments/Pasted image 20240525153147.png",
     "必备命令/attachments/Pasted image 20240525153049.png",
     "必备命令/attachments/Pasted image 20240525152014.png",
-    "必备命令/attachments/Pasted image 20240525151231.png",
-    "必备命令/attachments/Pasted image 20240525150906.png",
-    "必备命令/attachments/Pasted image 20240525150618.png",
     "必备命令/正则表达式.md",
-    "必备命令/attachments/Pasted image 20240525143256.png",
     "必备命令/attachments",
     "必备命令/磁盘管理.md",
     "必备命令/磁盘故障.md",
