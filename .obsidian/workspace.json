@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "必备命令/三剑客之awk.md",
+                "file": "必备命令/基操中之基操的基操.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "必备命令/三剑客之awk.md",
+                "file": "必备命令/基操中之基操的基操.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "必备命令/三剑客之awk.md",
+                "file": "必备命令/基操中之基操的基操.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "必备命令/三剑客之awk.md"
+                "file": "必备命令/基操中之基操的基操.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "b3cd6d3a52a040c9",
   "lastOpenFiles": [
+    "必备命令/三剑客之sed.md",
+    "必备命令/基操中之基操的基操.md",
     "必备命令/三剑客之awk.md",
     "必备命令/attachments/Pasted image 20240527172631.png",
     "必备命令/attachments/Pasted image 20240527171211.png",
@@ -169,7 +171,6 @@
     "必备命令/sed与grep练习题.md",
     "必备命令/find命令.md",
     "必备命令/attachments/Pasted image 20240526162333.png",
-    "必备命令/三剑客之sed.md",
     "必备命令/正则与grep.md",
     "必备命令/attachments/Pasted image 20240526111649.png",
     "().md",
