@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "必备命令/基操中之基操的基操.md",
+                "file": "自动化/密钥认证与自动化分发.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "必备命令/基操中之基操的基操.md",
+                "file": "自动化/密钥认证与自动化分发.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "必备命令/基操中之基操的基操.md",
+                "file": "自动化/密钥认证与自动化分发.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "必备命令/基操中之基操的基操.md"
+                "file": "自动化/密钥认证与自动化分发.md"
               }
             }
           },
@@ -161,8 +161,15 @@
   },
   "active": "b3cd6d3a52a040c9",
   "lastOpenFiles": [
-    "必备命令/三剑客之sed.md",
+    "自动化/attachments/Pasted image 20240529174505.png",
+    "自动化/attachments/Pasted image 20240529173244.png",
+    "自动化/attachments/Pasted image 20240529171518.png",
+    "自动化/attachments/Pasted image 20240529165940.png",
+    "自动化/attachments/Pasted image 20240529165655.png",
+    "自动化/attachments",
+    "自动化/密钥认证与自动化分发.md",
     "必备命令/基操中之基操的基操.md",
+    "必备命令/三剑客之sed.md",
     "必备命令/三剑客之awk.md",
     "必备命令/attachments/Pasted image 20240527172631.png",
     "必备命令/attachments/Pasted image 20240527171211.png",
@@ -174,15 +181,11 @@
     "必备命令/正则与grep.md",
     "必备命令/attachments/Pasted image 20240526111649.png",
     "().md",
-    "必备命令/attachments/Pasted image 20240525203926.png",
     "Untitled.canvas",
     "必备命令/tar-打包及解压.md",
     "综合架构/备份服务/rsync全网备份项目.md",
     "必备命令/用户管理.md",
     "正则表达式.md",
-    "必备命令/attachments/Pasted image 20240525153147.png",
-    "必备命令/attachments/Pasted image 20240525153049.png",
-    "必备命令/attachments/Pasted image 20240525152014.png",
     "必备命令/正则表达式.md",
     "必备命令/attachments",
     "必备命令/磁盘管理.md",
@@ -197,8 +200,6 @@
     "综合架构/Ansible/必备模块.md",
     "综合架构/备份服务/备份服务——Rsync.md",
     "必备命令/系统别名.md",
-    "在这个分区中，找出目录本身大于1M的。.md",
-    "必备命令/系统高负载排查.md",
-    "2024-05-23.md"
+    "在这个分区中，找出目录本身大于1M的。.md"
   ]
 }
