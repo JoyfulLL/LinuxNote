@@ -20,7 +20,6 @@ awk  -F:  'NR==1{print $1,$3,$NF}' /etc/passwd
 
 ⭐⭐⭐⭐⭐
 
-
 >NR意思为`Number of Record`行号
 >
 >`==`表示等于
