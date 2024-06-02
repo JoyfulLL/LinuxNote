@@ -11,8 +11,12 @@
             "id": "408184cf9c839830",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "自动化/shell/内置命令与外置命令.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "自动化/shell/内置命令与外置命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "自动化/shell/内置命令与外置命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "自动化/shell/内置命令与外置命令.md"
+              }
             }
           },
           {
@@ -153,6 +161,7 @@
   },
   "active": "408184cf9c839830",
   "lastOpenFiles": [
+    "自动化/shell/内置命令与外置命令.md",
     "自动化/shell/shell子串.md",
     "自动化/shell/attachments/Pasted image 20240602162018.png",
     "自动化/shell/attachments",
