@@ -190,3 +190,87 @@ abc123ABC123abc
 ```
 
 >对于末尾匹配，`%%`的结尾必须是最后一个字符，否则匹配不上
+
+
+## 批量修改文件名
+创建测试文件
+```shell
+touch abig{1..5}_finished.jpg
+touch abig{1..5}_finished.png
+
+ll
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig2_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig2_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig3_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig3_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig4_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig4_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig5_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig5_finished.png
+```
+
+### 1.修改单个文件的文件名
+```shell
+[root@Vue /tmp]# mv abig1_finished.jpg abig1.jpg
+[root@Vue /tmp]# ll
+total 0
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1.jpg
+```
+### 2.利用变量的子串功能，去掉字符信息
+```shell
+[root@Vue /tmp]# f=abig1_finished.png
+[root@Vue /tmp]# echo ${f//_finished/}
+abig1.png
+# 仅为模拟，并未真是改变文件名
+[root@Vue /tmp]# echo $f
+abig1_finished.png
+```
+### 3.利用反引号
+```shell
+[root@Vue /tmp]# echo $f
+abig1_finished.png
+[root@Vue /tmp]# mv $f `echo ${f//_finished/}`
+[root@Vue /tmp]# ll
+total 0
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig1.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig2_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig2_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig3_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig3_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig4_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig4_finished.png
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig5_finished.jpg
+-rw-r--r-- 1 root root 0 Jun  2 15:55 abig5_finished.png
+```
+
+>反引号内实现了第2步的效果，去掉了字符信息，然后将更改后的字符信息作为新文件名
+
+### 4.去掉所有png后缀的`_finished`字符
+```shell
+# 筛选出带有_finished的png文件
+[root@Vue /tmp]# ls *fin*.png
+abig2_finished.png  abig3_finished.png  abig4_finished.png  abig5_finished.png
+[root@Vue /tmp]# for file_name in `ls *fin*.png`; do mv $file_name `echo ${file_name//_finished/}` ;done
+[root@Vue /tmp]# ls *.png
+abig1.png  abig2.png  abig3.png  abig4.png  abig5.png
+```
+
+可以转换成脚本去执行，但是只有一个for循环，且并不复杂；可以但没必要。
+```bash
+#! /bin/bash
+
+for file_name in `ls *fin*.png`
+do mv $file_name `echo ${file_name//_finished/}` 
+done
+```
+
+>注意！
+>
+>执行mv操作的时候，不能去掉反引号内的echo，否则会报错，提示没有这个命令。
+>
+
+![](attachments/Pasted%20image%2020240602162018.png)
