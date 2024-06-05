@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "脚本/打包压缩脚本.md",
+                "file": "script/backup_dir.md.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "3f7e0ccd0dab278f",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "脚本/打包压缩脚本.md",
+                "file": "script/backup_dir.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "脚本/打包压缩脚本.md",
+                "file": "script/backup_dir.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "脚本/打包压缩脚本.md"
+                "file": "script/backup_dir.md.md"
               }
             }
           },
@@ -147,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,10 +158,14 @@
       "random-note:Open random note": false
     }
   },
-  "active": "408184cf9c839830",
+  "active": "d12d31a834996b82",
   "lastOpenFiles": [
+    "脚本/backup_dir.md.md",
+    "script/backup_dir.sh",
+    "script/backup_dir.md.md",
+    "script",
+    "脚本/backup_dir.sh",
     "自动化/shell/内置命令与外置命令.md",
-    "脚本/打包压缩脚本.md",
     "脚本",
     "自动化/Untitled.md",
     "自动化/shell/shell变量.md",
@@ -200,11 +203,8 @@
     "必备命令/attachments",
     "必备命令/磁盘管理.md",
     "必备命令/磁盘故障.md",
-    "必备命令/images",
     "综合架构/Nginx/NginxProxy.md",
     "综合架构/Ansible/Ansible流程控制.md",
-    "综合架构/Ansible/Ansible优化.md",
-    "综合架构/Ansible/剧本调试.md",
-    "综合架构/Ansible/Jinja2模板.md"
+    "综合架构/Ansible/Ansible优化.md"
   ]
 }
