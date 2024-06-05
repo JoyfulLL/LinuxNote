@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具集与案例/日志筛选.md",
+                "file": "脚本/打包压缩脚本.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具集与案例/日志筛选.md",
+                "file": "脚本/打包压缩脚本.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具集与案例/日志筛选.md",
+                "file": "脚本/打包压缩脚本.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具集与案例/日志筛选.md"
+                "file": "脚本/打包压缩脚本.md"
               }
             }
           },
@@ -161,17 +161,20 @@
   },
   "active": "408184cf9c839830",
   "lastOpenFiles": [
+    "自动化/shell/内置命令与外置命令.md",
+    "脚本/打包压缩脚本.md",
+    "脚本",
+    "自动化/Untitled.md",
+    "自动化/shell/shell变量.md",
+    "自动化/shell/shell子串.md",
+    "必备命令/三剑客之sed.md",
+    "必备命令/正则与grep.md",
+    "工具集与案例/日志筛选.md",
     "工具集与案例/attachments/Pasted image 20240603235441.png",
     "工具集与案例/attachments/Pasted image 20240603235137.png",
     "工具集与案例/attachments",
-    "必备命令/三剑客之sed.md",
-    "工具集与案例/日志筛选.md",
     "工具集与案例",
-    "必备命令/正则与grep.md",
     "必备命令/三剑客之awk.md",
-    "自动化/shell/shell子串.md",
-    "自动化/shell/shell变量.md",
-    "自动化/shell/内置命令与外置命令.md",
     "自动化/shell/attachments/Pasted image 20240602162018.png",
     "自动化/shell/attachments",
     "自动化/密钥认证与自动化分发.md",
@@ -183,7 +186,6 @@
     "自动化/attachments/Pasted image 20240529165940.png",
     "自动化/attachments/Pasted image 20240529171518.png",
     "自动化/attachments/Pasted image 20240529173244.png",
-    "自动化/attachments/Pasted image 20240529174505.png",
     "自动化/attachments",
     "必备命令/基操中之基操的基操.md",
     "必备命令/sed与grep练习题.md",
@@ -203,7 +205,6 @@
     "综合架构/Ansible/Ansible流程控制.md",
     "综合架构/Ansible/Ansible优化.md",
     "综合架构/Ansible/剧本调试.md",
-    "综合架构/Ansible/Jinja2模板.md",
-    "综合架构/Ansible/Vault与Galaxy.md"
+    "综合架构/Ansible/Jinja2模板.md"
   ]
 }
